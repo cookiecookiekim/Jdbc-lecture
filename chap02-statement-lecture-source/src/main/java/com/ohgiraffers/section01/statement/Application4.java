@@ -30,7 +30,6 @@ public class Application4 {  // 24-09-30 (월) 5교시, EmployeeDTO 연동 (전�
 
         String query = "SELECT * FROM EMPLOYEE";
 
-
         try {
 
             //
