@@ -11,7 +11,7 @@ import java.util.Scanner;
 import static com.ohgiraffers.common.JDBCTemplate.close;
 import static com.ohgiraffers.common.JDBCTemplate.getConnection;
 
-public class Application { // 24-10-02 (수) 4교시 데이터베이스 모델링
+public class Application { // 24-10-02 (수) 4교시 데이터베이스 모델링 (각기 삽입)
 
     public static void main(String[] args) {
 
@@ -49,7 +49,10 @@ public class Application { // 24-10-02 (수) 4교시 데이터베이스 모델�
             pstmt.setInt(3, categoryCode);
             pstmt.setString(4, orderableStatus);
 
+            /* comment executeUpdate();
+            *   데이터베이스 테이블에 변화가 생긴 만큼 정수를 return해준다. */
             result = pstmt.executeUpdate(); // executeUpdate는 int형 반환
+            // 변경이 생긴 만큼 정수를 RETURN
 
         } catch (IOException e) {
             throw new RuntimeException(e);

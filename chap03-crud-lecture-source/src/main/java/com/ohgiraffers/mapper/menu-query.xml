@@ -8,7 +8,21 @@
         (MENU_NAME, MENU_PRICE, CATEGORY_CODE, ORDERABLE_STATUS)
         VALUES
         (? , ? , ? , ?)
+    </entry>
 
+    <entry key="updateMenu">
+        UPDATE TBL_MENU
+        SET
+             MENU_NAME = ? <!-- placeHolder의 번호는 1 -->
+            ,MENU_PRICE = ? <!-- placeHolder의 번호는 2 -->
+        WHERE
+            MENU_CODE = ? <!-- placeHolder의 번호는 3 -->
+    </entry>
+
+    <entry key="deleteMenu">
+        DELETE
+        FROM TBL_MENU
+        WHERE MENU_CODE = ? <!-- placeHolder 지정-->
     </entry>
 
 </properties>
