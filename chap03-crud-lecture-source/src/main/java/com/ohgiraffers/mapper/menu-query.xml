@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+    <entry key="insertMenu">
+        INSERT INTO TBL_MENU <!-- TBL_MENU에 값을 넣겠다. -->
+        (MENU_NAME, MENU_PRICE, CATEGORY_CODE, ORDERABLE_STATUS)
+        VALUES
+        (? , ? , ? , ?)
+
+    </entry>
+
+</properties>

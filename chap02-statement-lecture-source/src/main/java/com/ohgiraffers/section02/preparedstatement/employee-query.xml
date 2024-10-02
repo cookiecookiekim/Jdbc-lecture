@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties> <!-- 열어주고 -->
+    <entry key="selectByFamilyName"> <!-- 프로퍼티 파일의 KEY 값으로 쿼리문 접근 가능하다. -->
+        SELECT
+            *
+        FROM
+            EMPLOYEE
+        WHERE
+            EMP_NAME LIKE CONCAT(?,'%')
+    </entry>  <!-- 닫아주고 -->
+
+    <entry key="asd"> <!-- 이렇게 무한 확장 가능하다. -->
+        SELECT
+            *
+        FROM
+            EMPLOYEE
+        WHERE
+            EMP_NAME LIKE CONCAT(?,'%')
+    </entry>  <!-- 닫아주고 -->
+
+
+</properties>  <!-- 닫아주고 -->
